@@ -44,5 +44,9 @@ Documento: 1094895644
 Grupo 5 - 6
 
 
+<<<<<<< HEAD
 Proyecto dedicado a la ...
 >>>>>>> c3a91e0418cd07b37491284deed66b25069232b7
+=======
+Proyecto dedicado a la Tienda de ropa deportiva
+>>>>>>> 3bd83a3aca07c3de0e99c7e3315d22e0192a9f6a
