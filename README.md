@@ -24,4 +24,4 @@ Documento: 1094895644
 Grupo 5 - 6
 
 
-Proyecto dedicado a la ...
+Proyecto dedicado a la Tienda de ropa deportiva
