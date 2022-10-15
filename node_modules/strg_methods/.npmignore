@@ -1,0 +1,10 @@
+#ignore path
+node_modules/
+
+#ignore file names
+.DS_Store
+.swp
+
+#ignore file types
+*.sublime-project
+*.sublime-workspace
