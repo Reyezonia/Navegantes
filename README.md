@@ -20,6 +20,7 @@ Isaac Eli Ferrucho Maloof
 Documento: 1234094337
 Grupo 1 - 2
 >>>>>>> c3a91e0418cd07b37491284deed66b25069232b7
+Desarrollador 
 Yeimi Paola Navarrete Acuña
 Documento: 1119887564
 Grupo 1 - 2
