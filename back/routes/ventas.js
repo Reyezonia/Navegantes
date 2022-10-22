@@ -5,7 +5,7 @@ const router = express.Router();
 const{getVentas} = require("../controllers/ventasControllers")
 //listar ventas servicio
 
-router.route('/ventas').get(getVentas)
+router.route("/ventas").get(getVentas)
 //se traza ruta para ver la lista de ventas
 module.exports = router;
 //mostrar o exportar
