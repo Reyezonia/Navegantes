@@ -1,9 +1,9 @@
-const app=require ("./app")
+const app = require ("./app")
 //recibe cons del importable
 const connectDatabase = require("./config/database");
 
 //Setear el archivo de conffiguración
-const dotenv=require("dotenv");
+const dotenv = require("dotenv");
 //archivo de config principal
 dotenv.config({path: 'back/config/config.env'})
 
