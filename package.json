@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "description": "Tienda virtual de ropa deportiva",
   "main": "server.js",
+  
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node back/server.js",
+    "dev": "SET NODE_ENV=DEVELOPMENT& nodemon back/server",
+    "prod": "SET NODE_ENV=PRODUCTION& nodemon back/server"
   },
   "repository": {
     "type": "git",
@@ -19,6 +22,17 @@
   "dependencies": {
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
-    "mangosta": "^1.0.1"
-  }
+    "mangosta": "^1.0.1",
+    "mongoose": "^6.6.7",
+    "node-fetch": "^3.2.10"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "keywords": [
+    "Tienda",
+    "virtual",
+    "ropa",
+    "deportiva"
+  ]
 }
