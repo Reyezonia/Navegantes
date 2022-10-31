@@ -1,8 +1,15 @@
+
 //conectar base de datos
 const mongoose=require("mongoose");
 
 const connectDatabase = () => {
     mongoose.connect(process.env.DB_LOCAL_URI, {
+
+const mongoose=require("mongoose");
+
+const connectDadabase = () => {
+    mongoose.connect(process.env.DB_LOCAL_URI,{
+
         useNewUrlParser: true,
         useUnifiedTopology: true
     }).then(con => {
@@ -12,4 +19,8 @@ const connectDatabase = () => {
     })
 }
 
+
 module.exports=connectDatabase;
+
+module.exports=connectDadabase
+

@@ -17,4 +17,10 @@ const ventas = require('./routes/ventas')
 app.use('/api', ventas)
 //modelo-controlador-apps 
 /**ruta de navegador app.use('/api',index) home */
+
+//Importar rutas
+const productos=require("./routes/products")
+
+app.use('/api', productos) // Sugeto a decision (ruta del navegador)
+
 module.exports = app
