@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Agregar nueva venta</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" class="text-danger" href="front/public/images/NAVEGANTES.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    a{color:white;}
+    a:hover {color: black; text-decoration:none;}
+    .fakeimg {
+    height: 200px;
+    background: #aaa;  }
+  </style>
+</head>
+<body>
+<div class="container-fluid" align="center">
+
+    <div class="jumbotron text-center" style="margin-bottom:0">
+        <h1>Agregar nueva venta</h1>
+             </div> 
+
+             <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+              <a class="navbar-brand" href="home.html">Inicio</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Productos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="listaVentas.html">Ventas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Clientes</a>
+                  </li>    
+                </ul>
+              </div> 
+              <form class="form-inline" action="/action_page.php">
+                  <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                  <button class="btn btn-info"" type="submit">Search</button>
+                </form> 
+            </nav>
+            <br><br>
+      <form>
+        <div class="row">
+          <div class="form-group col-md-12">
+            <label class="col-md-3" for="id">ID de la venta:</label>
+            <div class="col-md-6">
+              <input type="text" id="id" required="required" readonly></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group col-md-12">
+            <label class="col-md-3" for="cantidad">Cantidad:</label>
+            <div class="col-md-6">
+              <input type="number"  id="cantidad" required="required">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group col-md-12">
+            <label class="col-md-3" for="producto">Producto:</label>
+            <div class="col-md-6">
+              <input type="text"  id="producto" required="required">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group col-md-12">
+            <label class="col-md-3" for="categoria">Categoria:</label>
+            <div class="col-sm-6">
+              <select id="categoria"required="required">
+                <option th:value=1>Novedades</option>
+                <option th:value=2>Hombre</option>
+                <option th:value=3>Mujer</option>
+                <option th:value=4>Infantil</option>
+                <option th:value=5>Zapatos</option>
+                <option th:value=5>Accesorios deportivos</option>
+                <option th:value=5>Suplementos alimenticios</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group col-md-12">
+            <label class="col-md-3" for="monto">Precio:</label>
+            <div class="col-md-6">
+              <input type="number" id="Precio" required="required">
+            </div>
+          </div>
+        </div>
+        <!--Campo para empleado (usuario responsable)-->
+        <div class="row">
+          <div class="form-group col-md-12">
+            <label class="col-md-3" for="usuario">Vendedor:</label>
+            <div class="col-md-3">
+              <select th:field="*{usuario}" class="form-control" id="usuario" required="required" readonly>
+                <option text="empleado" value="empleado"></option>
+               </select>
+            </div>
+          </div>
+        </div>
+               <div class="row">
+          <div class="form-group col-sm-12">
+            <label class="col-sm-3" for="fecha">Fecha Venta:</label>
+            <div class="col-sm-6">
+              <input type="date" id="fecha" required="required" readonly></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group col-md-12">
+            <label class="col-md-3" for="monto">Total Venta:</label>
+            <div class="col-md-6">
+              <input type="number" id="ventaTotal" required="required">
+            </div>
+          </div>
+        </div>
+
+        <br><br>
+        <div class="row">
+          <div class="col-sm-12">
+            <button class="btn btn-success">Guardar</button>
+    
+            <a href="javascript: history.go(-1)" class="btn btn-dark" role="button">Cancelar</a>
+    
+          </div>
+        </div>
+        <br><br>
+      </form>
+     
+      <br>   <br> <br>   <br> <br>   <br> <br>   <br>
+      <div class="jumbotron text-center" style="margin-bottom:1em; margin-left: 1em; background-color: rgb(95 158 160 / 50%);">
+       <div class="float-lg-right">Creado por @Sonia Reyes<br>
+            Equipo Navegantes<br>
+            Proyecto MisiónTIC 2022</div><br>
+    </div>
+    </div>
+</div>
+</body>
+</html>

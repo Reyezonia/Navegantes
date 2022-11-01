@@ -65,8 +65,8 @@ const productosSchema=mongoose.Schema({
                 "Mochilas",
                 "Accesorios",
                 "Suplementos Alimenticios"
-
-
+            ]
+        },
         required:[true, "Por favor seleccione la categoria del producto."],
         enum:{
             values:[
@@ -136,7 +136,4 @@ const productosSchema=mongoose.Schema({
 module.exports=mongoose.model("productos",productosSchema)
 
 
-})
-
-module.exports = mongoose.model("productos",productosSchema)
 
